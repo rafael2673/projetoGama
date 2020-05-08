@@ -6,3 +6,6 @@ O intuito desse projeto é fazer uma iteração do Javascript com o html e css, 
 e colocando na página em forma de cards.
 
 Sofrerá alterações.
+
+link de hospedagem
+https://projetogamaacademy.netlify.app/projetogama
