@@ -1,32 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Projeto gama</title>
 	<link rel="stylesheet" type="text/css" href="theme.css">
+	
+	
 </head>
-<body>	
-	<script>
-		let url = new URL("https://api.sheety.co/30b6e400-9023-4a15-8e6c-16aa4e3b1e72");
-		let request = new XMLHttpRequest();
-		request.open('GET', url);
-		request.responseType = 'json';
-		request.send();
-		request.onload = () =>{
-			let alugueisDisponiveis = request.response;
-			let html = `<div id = "cards">`;
-			for (let i = 0; i < alugueisDisponiveis.length; i++){
-				html += `<div class = "card" style = "width: 18rem;">`;
-				html +=   `<img class = "card-img-top" src="${alugueisDisponiveis[i].photo}" alt = "${alugueisDisponiveis[i].property_type}">`
-				html +=   `<div class = "card-body">`
-				html +=      `<h5 class = "card-title">${alugueisDisponiveis[i].property_type}</h5>`
-				html +=      `<p class = "card-text">${alugueisDisponiveis[i].name}</p>`
-				html +=      `<h4 class = "card-price">R$${alugueisDisponiveis[i].price}</h4>`
-				html +=    `</div>`
-				html += `</div>`;
-			}
-			html += `</div>`
-			document.body.innerHTML = html;
-		}
-	</script>
+<body>
+	<header>Teste</header>
+	<main>
+		<div id = "cards"></div>
+		<div id = "pagination" class="pagenumbers"></div>		
+	</main>
+	<script src="projeto.js"></script>
 </body>
 </html>
