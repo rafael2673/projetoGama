@@ -46,6 +46,7 @@ main .list .item:hover {
 #cards{
 	display: flex;
 	flex-wrap: wrap;
+	margin-top: 10px;
 }
 .card{
 	width: 450px;
